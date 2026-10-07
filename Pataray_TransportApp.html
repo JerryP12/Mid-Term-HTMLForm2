@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transportation App</title>
+</head>
+<div style="text-align:center">
+<header>
+    <h1>GoRide</h1>
+</header>
+<section>
+<body>
+     <form action="#" method="post">
+    <section id="#top">
+        <nav>
+            <p><em>
+                <a href="#book">Book a Ride</a>
+                <a href="#fleet">Our Vehicles</a>
+                <a href="#map">Map</a>
+                <a href="#media">Media</a>
+                <a href="#schedule">Schedule</a>
+                <a href="#contact">Contact</a>
+                <a href="#links">Links</a>
+            </em></p>
+        </nav>
+    </section>
+<main>
+    <section id="book">
+        <h2>Book a Ride</h2>
+        
+       
+            <fieldset>
+                <legend>Trip Details</legend>
+                <p>
+                    <label alt="Full name label" for="full-name">Full name:</label>
+                    <input type="text" id="full-name" placeholder="John Doe" required>
+                </p>
+                <p>
+                    <label alt="Phone number label" for="phone">Phone number:</label>
+                    <input type="tel" id="phone" placeholder="0912-345-6789" required>
+                </p>
+                <p>
+                    <label alt="Email label" for="email">Email:</label>
+                    <input type="email" id="email" placeholder="johndoe@example.com">
+                </p>
+                <p>
+                    <label alt="Pick-up location label" for="pickup">Pick-up location:</label>
+                    <input type="text" id="pickup" list="places" placeholder="Select or type location">
+                </p>
+                <p>
+                    <label alt="Drop-off location label" for="dropoff">Drop-off location:</label>
+                    <input type="text" id="dropoff" list="places" placeholder="Select or type destination">
+                </p>
+                <datalist id="places">
+                    <option value="Public Market"></option>
+                    <option value="University Campus"></option>
+                    <option value="Central Terminal"></option>
+                    <option value="City Hall"></option>
+                    <option value="Airport"></option>
+                </datalist>
+                <p>
+                    <label alt="Date label" for="trip-date">Date:</label>
+                    <input type="date" id="trip-date" required>
+                </p>
+                <p>
+                    <label alt="Time label" for="trip-time">Time:</label>
+                    <input type="time" id="trip-time" required>
+                </p>
+                <p>
+                    <label alt="Passengers label" for="passengers">Passengers:</label>
+                    <input type="number" id="passengers" min="1" max="10" value="1">
+                </p>
+                <p>
+                    <label alt="Vehicle type label" for="vehicle-type">Vehicle type:</label>
+                    <select id="vehicle-type">
+                        <option value="taxi">Taxi</option>
+                        <option value="van">Van</option>
+                        <option value="shuttle">Shuttle Bus</option>
+                        <option value="moto-taxi">Motorcycle Taxi</option>
+                        <option value="tricycle">Tricycle</option>
+                    </select>
+                </p>
+                <p>
+                    <label alt="Payment method context">Payment method:</label><br>
+                    <input type="radio" id="pay-cash" name="payment" value="cash" checked>
+                    <label alt="Cash option label" for="pay-cash">Cash</label>
+                    
+                    <input type="radio" id="pay-card" name="payment" value="card">
+                    <label alt="Card option label" for="pay-card">Card</label>
+                    
+                    <input type="radio" id="pay-wallet" name="payment" value="e-wallet">
+                    <label alt="E-wallet option label" for="pay-wallet">E-Wallet</label>
+                </p>
+                <p>
+                    <label alt="Extras context">Extras:</label><br>
+                    <input type="checkbox" id="extra-luggage" value="luggage">
+                    <label alt="Extra luggage checkbox" for="extra-luggage">Extra luggage</label>
+                    
+                    <input type="checkbox" id="extra-seat" value="child-seat">
+                    <label alt="Child seat checkbox" for="extra-seat">Child seat</label>
+                    
+                    <input type="checkbox" id="extra-accessible" value="wheelchair">
+                    <label alt="Wheelchair accessible checkbox" for="extra-accessible">Wheelchair accessible</label>
+                </p>
+                <p>
+                    <label alt="Notes for driver label" for="driver-notes">Notes for the driver:</label><br>
+                    <textarea id="driver-notes" rows="4" cols="40" placeholder="Add specific instructions here..."></textarea>
+                </p>
+                <p>
+                    <input type="checkbox" id="terms" required>
+                    <label alt="Terms and conditions label" for="terms">I agree to the <a href="">Terms & Conditions</a></label>
+                </p>
+
+                <p>
+                    <button type="submit">Book Now</button>
+                    <button type="reset">Clear</button>
+                </p>
+
+            </fieldset>
+        </form>
+        
+        <hr>
+    </section>
+
+</main>
+<main>
+    <section id="fleet">
+        <img src="images (3).png"><br>
+        <h1>Our Vehicles</h1><br>
+            <table align="center">
+                <tr>
+                    <td>
+                        <figure>
+
+                            <img src="images(4).jpg"
+                            width="600"
+                            height="400">
+                            <figcaption>
+                                <strong>Taxi</strong>-A Comfortable Vehicle capable of harboring 4-5 passengers
+                            </figcaption>
+                      
+                        </figure>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <figure>
+
+                            <img src="Van.png">
+                            <figcaption>
+                                <strong>Van</strong>-a type of motor vehicle designed with an enclosed, box-like body used for transporting large amounts of goods, equipment, or groups of people
+                            </figcaption>
+                          
+                        </figure>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <figure>
+
+                            <img src="shuttle_bus.jpg"
+                            width="600"
+                            height="400">
+                            <figcaption>
+                                <strong>Shuttle Bus</strong>-a passenger vehicle—typically a minivan, full-size passenger van, or compact minibus—used to transport groups of people along fixed routes or between designated locations (such as airports, hotels, corporate campuses, or event venues) on a regular schedule
+                            </figcaption>
+                            
+                        </figure>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <figure>
+
+                            <img src="Moto_bike.jpg"
+                            width="600"
+                            height="400">
+                            <figcaption>
+                                <strong>Motorcycle Taxi</strong>-a licensed or informal form of passenger transport where a rider pays a driver to travel on the back of a motorcycle
+                           
+                        </figure>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <figure>
+
+                            <img src="Tricycle.jpg"
+                            width="600"
+                            height="400">
+                            <figcaption>
+                                <strong>Tricycle</strong>-a licensed or informal form of passenger transport where a rider pays a driver to travel on the back of a motorcycle
+                           
+                        </figure>
+                    </td>
+                </tr>
+            </table>
+    </section>
+</main>
+<main>
+    <section id="map">
+    <h3>Map</h3>
+        <img src="map.jpg" width="600" height="600">
+    </section>
+
+</main>
+<main> 
+    <section id="media"></section>
+        <h3>How GoRide Works (Video)</h3>
+            <video width="480" controls poster="videoplayback.mp4">
+            <source src="videoplayback.mp4" type="video/mp4">
+            <source src="movie.ogg" type="video/ogg">
+           
+        </video>
+
+        <h3>Driver Announcement Audio</h3>
+        <audio controls>
+            <source src="3 REASONS you should consider Nexus for your next Tuguegarao trip.mp3" type="audio/mpeg">
+            <source src="announcement.ogg" type="audio/ogg">
+        </audio>
+
+        <h3>Watch on YouTube </h3>
+        <iframe 
+        width="560" 
+        height="315" 
+        src="ULTIMATE COMFORT from Sorsogon to Manila _ Bicol Isarog's new Thaco Sleeper bus _ Gubat to Cubao.mp4" 
+        title="Watch on YouTube" 
+        allowfullscreen>
+        </iframe>
+    </section>
+</main>
+<main><section id="schedule">
+      <h2>Shuttle Schedule</h2>
+      <table border="1" cellpadding="6" cellspacing="0">
+        <caption>Daily departures from Central Terminal</caption>
+        <thead>
+          <tr>
+            <th>Route</th>
+            <th>Departure</th>
+            <th>Arrival</th>
+            <th>Fare</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Central Terminal to City Hall</td>
+            <td>06:00 AM</td>
+            <td>06:30 AM</td>
+            <td>₱105.0</td>
+          </tr>
+          <tr>
+            <td>Central Terminal to University Campus</td>
+            <td>07:15 AM</td>
+            <td>07:50 AM</td>
+            <td>₱150.00</td>
+          </tr>
+          <tr>
+            <td>Central Terminal to Airport</td>
+            <td>08:30 AM</td>
+            <td>09:15 AM</td>
+            <td>₱350.00</td>
+          </tr>
+          <tr>
+            <td>Central Terminal to Public Market</td>
+            <td>10:00 AM</td>
+            <td>10:45 AM</td>
+            <td>₱100.00</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <h3>Check Your Route</h3>
+      <form action="#" method="get">
+        <p>
+          <label for="route_select">Select Route:</label>
+          <select id="route_select" name="route">
+            <option value="city_hall">Central Terminal to City Hall</option>
+            <option value="university">Central Terminal to University Campus</option>
+            <option value="airport">Central Terminal to Airport</option>
+            <option value="public_market">Central Terminal to Public Market</option>
+          </select>
+          <input type="submit" value="Search">
+        </p>
+      </form>
+    </section>
+</main>
+<main>  
+    <section id="contact">
+      <h2>Contact & Feedback</h2>
+      
+      <form action="#" method="post" enctype="multipart/form-data">
+        <fieldset>
+          <legend>Send Feedback</legend>
+          
+          <p>
+            <label for="fb_name">Your name:</label>
+            <input type="text" id="fb_name" name="name" required>
+          </p>
+
+          <p>
+            <label for="fb_rate">Rate your ride (1-5):</label>
+            <input type="range" id="fb_rate" name="rate" min="1" max="5" value="3">
+          </p>
+
+          <p>
+            <label for="fb_topic">Topic:</label>
+            <select id="fb_topic" name="topic">
+              <option value="compliment">Compliment</option>
+              <option value="complaint">Complaint</option>
+              <option value="lost_item">Lost Item</option>
+              <option value="suggestion">Suggestion</option>
+            </select>
+          </p>
+
+          <p>
+            <label for="fb_message">Message:</label><br>
+            <textarea id="fb_message" name="message" rows="5" cols="40" required>Input text here...</textarea>
+          </p>
+
+          <p>
+            <label for="fb_photo">Attach a photo (optional):</label>
+    </section>
+</main>
+    <section id="links">
+        <h2>Reach us</h2>
+        <p>Visit our</p><a href="https://www.facebook.com/jeremy.pataray">Facebook</a>
+
+        <h2>Useful links</h2>
+        <ul><a href="https://www.openstreetmap.org/#map=6/13.02/121.77">openstreetmap</a></ul>
+        <ul><a href="https://www.google.com/maps">Googlemaps</a></ul>
+        <ul><a href="https://www.facebook.com/jeremy.pataray">Facebookpage</a></ul>
+        <ul><a href="#top">Back to top</a></ul>
+        <h2>Terms and services</h2>
+        <details>
+        <ol>1. Services Provided
+We provide passenger transportation services. We do our best to arrive on time, but pick-up and drop-off times are estimates. We are not responsible for delays caused by traffic, weather, road conditions, or other factors beyond our control.
+</ol>
+        <ol>2. Passenger Conduct
+To ensure everyone’s safety, all passengers must:
+• Follow the law, including wearing seatbelts at all times.
+• Treat drivers and other passengers with respect. No abusive language, harassment, or aggressive behavior.
+• Keep the vehicle clean. Smoking, vaping, and illegal drug use are strictly prohibited inside our vehicles.
+We reserve the right to refuse service or remove any passenger who violates these rules without a refund.
+</ol>
+        <ol>3. Fares, Cancellations, and Refunds
+• Pricing: You agree to pay the fare quoted to you at the time of booking.
+• Cancellations: If you need to cancel your ride, you must do so [Insert Time, e.g., 24 hours] before your scheduled pick-up to receive a full refund.
+• Late Cancellations: Cancellations made after this window may be charged a fee or the full fare.</ol>
+        </details>
+    </section>
+</div>
+</body>
+</html>
